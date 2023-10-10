@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zap1.mp3-3c2eb029f7b2245b3032547e751ac537.mp3str"
+
+[deps]
+
+source_file="res://assets/Kenney sound mp3/zap1.mp3"
+dest_files=[ "res://.import/zap1.mp3-3c2eb029f7b2245b3032547e751ac537.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

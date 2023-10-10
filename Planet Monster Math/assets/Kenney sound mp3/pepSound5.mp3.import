@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pepSound5.mp3-67a6d5e894548d94a44ed2f61ea0ca7e.mp3str"
+
+[deps]
+
+source_file="res://assets/Kenney sound mp3/pepSound5.mp3"
+dest_files=[ "res://.import/pepSound5.mp3-67a6d5e894548d94a44ed2f61ea0ca7e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

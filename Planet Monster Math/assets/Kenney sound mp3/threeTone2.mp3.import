@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/threeTone2.mp3-d41c7590c50c84370e729cb32fca6570.mp3str"
+
+[deps]
+
+source_file="res://assets/Kenney sound mp3/threeTone2.mp3"
+dest_files=[ "res://.import/threeTone2.mp3-d41c7590c50c84370e729cb32fca6570.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

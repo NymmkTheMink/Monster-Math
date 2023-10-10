@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/laser7.mp3-c9546a453b327b0c60f5d1b5bca9ee8d.mp3str"
+
+[deps]
+
+source_file="res://assets/Kenney sound mp3/laser7.mp3"
+dest_files=[ "res://.import/laser7.mp3-c9546a453b327b0c60f5d1b5bca9ee8d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

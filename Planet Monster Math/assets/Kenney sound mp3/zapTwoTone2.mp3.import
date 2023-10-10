@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapTwoTone2.mp3-fe6e8c72f026ab9217ac3959cafff0fe.mp3str"
+
+[deps]
+
+source_file="res://assets/Kenney sound mp3/zapTwoTone2.mp3"
+dest_files=[ "res://.import/zapTwoTone2.mp3-fe6e8c72f026ab9217ac3959cafff0fe.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

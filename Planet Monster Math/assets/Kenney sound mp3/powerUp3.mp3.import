@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/powerUp3.mp3-2e2a073b3d23c7b3b44b5f6c80cc3e0a.mp3str"
+
+[deps]
+
+source_file="res://assets/Kenney sound mp3/powerUp3.mp3"
+dest_files=[ "res://.import/powerUp3.mp3-2e2a073b3d23c7b3b44b5f6c80cc3e0a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

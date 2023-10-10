@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/lowDown.mp3-009682bfbe3f92d9323034ae4bb7a08f.mp3str"
+
+[deps]
+
+source_file="res://assets/Kenney sound mp3/lowDown.mp3"
+dest_files=[ "res://.import/lowDown.mp3-009682bfbe3f92d9323034ae4bb7a08f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

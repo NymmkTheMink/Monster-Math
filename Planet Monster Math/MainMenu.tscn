@@ -1,0 +1,136 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://assets/Kenney_gameIcons/PNG/White/2x/magic space.mp3" type="AudioStream" id=1]
+[ext_resource path="res://assets/Kenney_gameIcons/PNG/White/2x/Sigmar/Sigmar-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/Kenney_gameIcons/PNG/White/2x/gear.png" type="Texture" id=3]
+[ext_resource path="res://assets/Kenney_gameIcons/PNG/White/2x/right.png" type="Texture" id=4]
+[ext_resource path="res://assets/Kenney_gameIcons/PNG/White/2x/singleplayer.png" type="Texture" id=5]
+[ext_resource path="res://MainMenu.gd" type="Script" id=7]
+[ext_resource path="res://assets/Kenney sound mp3/phaserDown2.mp3" type="AudioStream" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+size = 140
+outline_size = 12
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 96
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0, 0, 0, 0.294118 )
+border_width_left = 12
+border_width_top = 12
+border_width_right = 12
+border_width_bottom = 12
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0, 0, 0, 0.490196 )
+border_width_left = 12
+border_width_top = 12
+border_width_right = 12
+border_width_bottom = 12
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0, 0, 0, 0.490196 )
+border_width_left = 12
+border_width_top = 12
+border_width_right = 12
+border_width_bottom = 12
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[node name="MainMenu" type="Control"]
+script = ExtResource( 7 )
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -4.0
+autoplay = true
+bus = "Music"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+color = Color( 0.14902, 0, 0.882353, 1 )
+
+[node name="Title" type="Label" parent="."]
+margin_left = 184.0
+margin_top = 40.0
+margin_right = 1736.0
+margin_bottom = 271.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Planet Monster Math"
+
+[node name="PlayButton" type="Button" parent="."]
+margin_left = 600.0
+margin_top = 304.0
+margin_right = 1320.0
+margin_bottom = 475.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+custom_styles/normal = SubResource( 3 )
+text = "Play   "
+icon = ExtResource( 4 )
+
+[node name="PressedSound" type="AudioStreamPlayer" parent="PlayButton"]
+stream = ExtResource( 8 )
+bus = "SoundEffects"
+
+[node name="CustomizeButton" type="Button" parent="."]
+margin_left = 600.0
+margin_top = 560.0
+margin_right = 1320.0
+margin_bottom = 731.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+custom_styles/normal = SubResource( 3 )
+text = "Customize "
+icon = ExtResource( 5 )
+
+[node name="PressedSound" type="AudioStreamPlayer" parent="CustomizeButton"]
+stream = ExtResource( 8 )
+bus = "SoundEffects"
+
+[node name="SettingsButton" type="Button" parent="."]
+margin_left = 600.0
+margin_top = 824.0
+margin_right = 1320.0
+margin_bottom = 995.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+custom_styles/normal = SubResource( 3 )
+text = "Settings "
+icon = ExtResource( 3 )
+
+[node name="PressedSound" type="AudioStreamPlayer" parent="SettingsButton"]
+stream = ExtResource( 8 )
+bus = "SoundEffects"
+
+[node name="Colorblindness" type="CanvasLayer" parent="."]
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_PlayButton_pressed"]
+[connection signal="pressed" from="CustomizeButton" to="." method="_on_CustomizeButton_pressed"]
+[connection signal="pressed" from="SettingsButton" to="." method="_on_SettingsButton_pressed"]

@@ -1,0 +1,135 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://assets/Kenney_gameIcons/PNG/White/2x/Sigmar/Sigmar-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/Kenney_gameIcons/PNG/White/2x/audioOn.png" type="Texture" id=2]
+[ext_resource path="res://assets/Kenney_gameIcons/PNG/White/2x/musicOn.png" type="Texture" id=3]
+[ext_resource path="res://Settings.gd" type="Script" id=4]
+[ext_resource path="res://assets/Kenney_gameIcons/PNG/White/2x/magic space.mp3" type="AudioStream" id=5]
+[ext_resource path="res://assets/Kenney_gameIcons/PNG/White/2x/exit.png" type="Texture" id=6]
+[ext_resource path="res://assets/Kenney sound mp3/phaserDown2.mp3" type="AudioStream" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 140
+outline_size = 12
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 96
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0, 0, 0, 0.294118 )
+border_width_left = 12
+border_width_top = 12
+border_width_right = 12
+border_width_bottom = 12
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0, 0, 0, 0.490196 )
+border_width_left = 12
+border_width_top = 12
+border_width_right = 12
+border_width_bottom = 12
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0, 0, 0, 0.490196 )
+border_width_left = 12
+border_width_top = 12
+border_width_right = 12
+border_width_bottom = 12
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[node name="Settings" type="Control"]
+script = ExtResource( 4 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+color = Color( 0.14902, 0, 0.882353, 1 )
+
+[node name="Title" type="Label" parent="."]
+margin_left = 184.0
+margin_top = 40.0
+margin_right = 1736.0
+margin_bottom = 271.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Settings"
+align = 1
+
+[node name="Music" type="Button" parent="."]
+margin_left = 488.0
+margin_top = 280.0
+margin_right = 1424.0
+margin_bottom = 462.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+text = "Music "
+icon = ExtResource( 3 )
+
+[node name="PressedSound" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource( 7 )
+bus = "SoundEffects"
+
+[node name="SoundEffects" type="Button" parent="."]
+margin_left = 488.0
+margin_top = 536.0
+margin_right = 1424.0
+margin_bottom = 718.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+text = "Sound effects "
+icon = ExtResource( 2 )
+
+[node name="PressedSound" type="AudioStreamPlayer" parent="SoundEffects"]
+stream = ExtResource( 7 )
+bus = "SoundEffects"
+
+[node name="Back" type="Button" parent="."]
+margin_left = 488.0
+margin_top = 792.0
+margin_right = 1424.0
+margin_bottom = 974.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+text = "Back "
+icon = ExtResource( 6 )
+
+[node name="PressedSound" type="AudioStreamPlayer" parent="Back"]
+stream = ExtResource( 7 )
+bus = "SoundEffects"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -4.0
+autoplay = true
+bus = "Music"
+
+[connection signal="pressed" from="Music" to="." method="_on_Music_pressed"]
+[connection signal="pressed" from="SoundEffects" to="." method="_on_SoundEffects_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]

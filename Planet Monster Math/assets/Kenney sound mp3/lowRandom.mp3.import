@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/lowRandom.mp3-d0b9d4d876bb7df0816c347544f2e886.mp3str"
+
+[deps]
+
+source_file="res://assets/Kenney sound mp3/lowRandom.mp3"
+dest_files=[ "res://.import/lowRandom.mp3-d0b9d4d876bb7df0816c347544f2e886.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

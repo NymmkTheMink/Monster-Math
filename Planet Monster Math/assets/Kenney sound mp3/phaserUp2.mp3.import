@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/phaserUp2.mp3-02efe33b6f2e1a0ae71394109a54b4eb.mp3str"
+
+[deps]
+
+source_file="res://assets/Kenney sound mp3/phaserUp2.mp3"
+dest_files=[ "res://.import/phaserUp2.mp3-02efe33b6f2e1a0ae71394109a54b4eb.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

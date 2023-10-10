@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tone1.mp3-61611fc1c09b5ec9ae6c8e8dca3338ec.mp3str"
+
+[deps]
+
+source_file="res://assets/Kenney sound mp3/tone1.mp3"
+dest_files=[ "res://.import/tone1.mp3-61611fc1c09b5ec9ae6c8e8dca3338ec.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

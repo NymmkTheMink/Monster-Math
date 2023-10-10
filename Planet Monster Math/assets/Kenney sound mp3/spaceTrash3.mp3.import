@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/spaceTrash3.mp3-a5a5a916ae7135375ab7b178ea6b85c7.mp3str"
+
+[deps]
+
+source_file="res://assets/Kenney sound mp3/spaceTrash3.mp3"
+dest_files=[ "res://.import/spaceTrash3.mp3-a5a5a916ae7135375ab7b178ea6b85c7.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

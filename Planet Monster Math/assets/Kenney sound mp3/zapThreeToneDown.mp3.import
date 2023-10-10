@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapThreeToneDown.mp3-d3d3766b29062fb2581240c5c07120ef.mp3str"
+
+[deps]
+
+source_file="res://assets/Kenney sound mp3/zapThreeToneDown.mp3"
+dest_files=[ "res://.import/zapThreeToneDown.mp3-d3d3766b29062fb2581240c5c07120ef.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
